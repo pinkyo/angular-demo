@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  hidden: boolean = false;
+
+  constructor() {}
+
+  hideImg(): void {
+    this.hidden = true;
+  }
 }
