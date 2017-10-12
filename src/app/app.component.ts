@@ -8,11 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
-  hidden: boolean = false;
+  private _hidden = false;
 
   constructor() {}
 
+  hidden(): boolean {
+    return this._hidden;
+  }
+
   hideImg(): void {
-    this.hidden = true;
+    this._hidden = true;
   }
 }
